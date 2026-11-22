@@ -101,11 +101,11 @@ class AdapterFalso(CanalAdapter):
 
 @pytest.fixture
 def adapter_falso_sucesso():
-    """Adaptador falso que sempre tem sucesso."""
-    return AdapterFalso(canal="falso", falhar=False)
+    """Adaptador falso que sempre tem sucesso (suporta canal 'discord')."""
+    return AdapterFalso(canal="discord", falhar=False)
 
 
 @pytest.fixture
 def adapter_falso_falha():
-    """Adaptador falso que sempre falha."""
-    return AdapterFalso(canal="falso", falhar=True)
+    """Adaptador falso que sempre falha (suporta canal 'discord')."""
+    return AdapterFalso(canal="discord", falhar=True)
